@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tetris Jigsaw</title>
+<style type="text/css">
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;;
+	color: #404040;
+	background-color: #FFFFFF;
+}
+
+
+.tetris-result {
+	padding: 10px 0px;
+}
+</style>
+
+<script src="customize.js" type="text/javascript"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		var div = document.createElement('div');
+	    div.style.width = "50px";
+	    document.body.appendChild(div);
+	    var _size = div.offsetWidth;
+	    document.body.removeChild(div);
+	    
+	</script>
+	<h1>Tetris Jigsaw</h1>
+	<form id="params" action="javascript:resolve()" accept='text/plain'>
+		<input type="file" name="pieces_data" id="pieces_data" />
+		<input type="submit" id="start" value="Start for fun" /> (If no file select, then default value will be loaded from server)
+	</form>
+	<div class="tetris-result" style="width: 50%; float:left;">
+		<canvas id="grid" style="display: block; height:200px; width: 200px; margin-bottom: 2em; border:1px solid #000000;"></canvas>
+	</div>
+	<div style="width: 50%; float:left;">
+		<h4>Sample data</h4>
+		<ul>
+			<li><a href="sample1.txt">Sample 1</a></li>
+			<li><a href="sample1.txt">Sample 2</a></li>
+			<li><a href="sample1.txt">Sample 3</a></li>
+			<li><a href="sample1.txt">Sample 4</a></li>
+			<li><a href="sample1.txt">Sample 5</a></li>
+			<li><a href="sample1.txt">Sample 6</a></li>
+			<li><a href="sample1.txt">Sample 7</a></li>
+		</ul>
+	</div>
+	
+</body>
+</html>
