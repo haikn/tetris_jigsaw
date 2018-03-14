@@ -1,6 +1,6 @@
 /**
  * @file: customize.js
- * @author: Khuc Nam Hai
+ * @author: Nam Hai Khuc
  * @date: 08 May 2017
  * @pure javascript only
  */
